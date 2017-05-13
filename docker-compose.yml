@@ -4,8 +4,8 @@ services:
   web:
     image: nginx:1.11.10
     ports:
-      # 将主机的 8080 端口映射到容器的 80 端口
-      - 8080:80
+      # 将主机的 8888 端口映射到容器的 80 端口
+      - 8888:80
     depends_on:
       - php
     # 同 php 一起共享 ./apps 目录
@@ -18,8 +18,8 @@ services:
   # PHP 7.1-fpm: https://hub.docker.com/_/php/
   php:
     build: 
-      context: ./docker
-      dockerfile: DockerFilePHP
+      context: ./docker/php
+      dockerfile: DockerFile
     volumes: 
       - ./apps:/mnt/apps
 
