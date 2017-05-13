@@ -18,4 +18,4 @@ docker-compose start
 docker-compose down
 ```
 #### 安装php扩展
-php扩展主要根据docker提供的docker-php-ext-install来安装，非常方便[查看例子](https://github.com/nineyang/docker-for-lnmp/blob/master/docker/DockerFilePHP)
+php扩展主要根据docker提供的docker-php-ext-install来安装，非常方便[查看例子](hhttps://github.com/nineyang/docker-for-lnmp/blob/master/docker/php/DockerFile)
